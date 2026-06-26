@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detector</h1>
+        <p>Enter text to analyze emotions</p>
+        
+        <div class="input-section">
+            <textarea id="textInput" rows="4" placeholder="Type your text here..."></textarea>
+            <button id="analyzeBtn">Analyze Emotions</button>
+        </div>
+        
+        <div id="result" class="result-section"></div>
+        <div id="error" class="error-section" style="display: none;"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+</body>
+</html>
